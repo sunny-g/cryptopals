@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mocha</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lib/mocha.css" />
+  </head>
+  <body>
+    <div id="mocha"></div>
+
+    <script src="lib/mocha.js"></script>
+    <script src="lib/chai.js"></script>
+    <script>
+      var should = chai.should();
+      mocha.setup('bdd');
+    </script>
+
+    <script src="set1/01.hexToBase64.js"></script>
+    <script src="set1/02.fixedXOR.js"></script>
+    <script src="set1/03.single-ByteXORCipher.js"></script>
+    <script src="set1/04.detectSingle-CharXOR.js"></script>
+    <script src="set1/05.implementingRepeating-KeyXOR.js"></script>
+    <script src="set1/06.breakRepeating-KeyXOR.js"></script>
+    <script src="set1/07.AESInECBMode.js"></script>
+    <script src="set1/08.detectAESInECBMode.js"></script>
+
+    <script src="tests.js"></script>
+
+    <script>
+      mocha.run();
+    </script>
+  </body>
+</html>
