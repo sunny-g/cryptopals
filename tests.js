@@ -20,7 +20,7 @@ describe('set 1', function() {
       var hex2 = '686974207468652062756c6c277320657965';
       var output = '746865206b696420646f6e277420706c6179';
 
-      expect(XOR2HexStrings(hex1, hex2)).to.equal(output)
+      expect(xor2HexStrings(hex1, hex2)).to.equal(output)
     });
   });
 
