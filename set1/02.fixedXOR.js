@@ -24,5 +24,5 @@ function xor2ByteArrays(buffer1, buffer2) {
   return buffer1.reduce((uint8, byte, index) => {
     uint8[index] = byte ^ buffer2[index];
     return uint8;
-  }, new Uint8Array(new ArrayBuffer(buffer1.length)));
+  }, new ByteArray(buffer1.length));
 }
